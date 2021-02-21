@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Nauman Umer</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+</head>
+
+<body x-data="data()">
+  <section class="flex items-center">
+    <div class="flex-grow-1">
+      <p class="pre-header h1-pre">Hello, I am</p>
+      <h1>Nauman Umer</h1>
+      <p class="post-header accent h1-post">FA18-BCS-162</p>
+
+      <p>
+        Comsats University Islamabad<br>
+        Lahore, Pakistan
+      </p>
+
+      <p>
+        +92 (340) 314 2134<br>
+        nmanumr@gmail.com
+      </p>
+    </div>
+    <div>
+      <img src="./profile.jpeg"
+        style="border-radius: 100%; float: right; height: 200px; width: 200px; margin-top: 10px;">
+    </div>
+  </section>
+
+  <section id="tldr">
+    <p class="pre-header h1-pre"></p>
+    <h1 class="lead">TL;DR</h1>
+    <p class="post-header accent h1-post"></p>
+
+
+    <h3>Slaping Computers from Early Age</h3>
+    <p class="post-header accent h3-post">Until something good happens</p>
+
+    <p>
+      Experince with web apps using angular, service workers, web scrapers, real time databases,
+      REST APIs, authetication and authorizations based on cookies and JSON web tokens, version
+      control systems like git, simple language interpreters / parsers, material design, ant design,
+      responsive web design. Beside all these I am also instrested (just interested) in deep learning, reinforcement
+      learing, algorithm implementation, kernel, compilers etc.
+    </p>
+
+    <div class="row">
+      <div class="col">
+
+        <h3>Languages & Framworks</h3>
+        <p class="post-header accent h3-post">Languages and frameworks I normally use</p>
+
+        <div class="gray" style="line-height: 25px;">
+          <template x-for="item in languages" :key="item[0]">
+            <div class="flex">
+              <div class="gray-dark mr-3" x-text="item[0]"></div>
+              <div class="flex-grow-1 padding-dots" style="margin-bottom: 6px;"></div>
+              <div class="ml-3" x-text="item[1]"></div>
+            </div>
+          </template>
+        </div>
+      </div>
+      <div class="col">
+        <h3>Tools/Environments</h3>
+        <p class="post-header accent h3-post">Development tools & environments I'm Comfortable with</p>
+
+        <div class="gray" style="line-height: 25px;">
+          <template x-for="item in tools" :key="item[0]">
+            <div class="flex">
+              <div class="gray-dark mr-3" x-text="item[0]"></div>
+              <div class="flex-grow-1 padding-dots" style="margin-bottom: 6px;"></div>
+              <div class="ml-3" x-text="item[1]"></div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <p></p>
+  <div class="pagebreak"> </div>
+
+  <section id="Projects">
+    <h1 class="lead">Projects</h1>
+
+    <p class="pre-header h3-pre">2020</p>
+    <h3>Rabbito</h3>
+    <p class="post-header accent h3-post">Serverless markdown based blogging for enterprises - <a
+        href="https://rabbito.io/">Visit Web</a>
+
+    <p>
+      Built using Angular, Ionic, Cordova & Firebase. Class Resources can be downloaded and viewed even when offline.
+      Have two (dark & light) mode to work in day and night. Based on
+      Angular Material and Ionic Components with custom styling.
+    </p>
+
+    <p class="pre-header h3-pre">2018</p>
+    <h3>Class Resources</h3>
+    <p class="post-header accent h3-post">A plateform to host class learning resources - <a
+        href="https://play.google.com/store/apps/details?id=com.firebaseapp.comsats_cr">Mobile App</a> - <a
+        href="https://classx.web.app/">Web App</a> - <a href="https://github.com/nmanumr/comsats-class-resources">Source
+        Code</a></p>
+
+    <p>
+      An app that provides a platform to share class learning specially for COMSATS Students. Features include
+      class resources sharing, timetable sharing, events, reminders (like assignments deadlines etc), notifications
+      about upcomming deadlines and events.
+    </p>
+
+    <p class="pre-header h3-pre">2018</p>
+    <h3>AIDE (Solo developer)</h3>
+    <p class="post-header accent h3-post">An online entry test preperation plateform - <a
+        href="https://youtu.be/TyQZik0QVVw">Demo Video</a></p>
+
+    <p>
+      Built using Django, Jquery & Bootstrap. Hosted on Heroku & Amazon S3 bucket. A plateform where students and
+      teacher can signup and
+      students can take lectures, quizes or read written notes. It also supports mock test and other online classes.
+    </p>
+
+    <p class="pre-header h3-pre">2018</p>
+    <h3>FUNG Short Notes</h3>
+    <p class="post-header accent h3-post">Short notes for FUNG entry test - <a
+        href="https://nmanumr.github.io/fung-notes/">View</a> - <a href="https://github.com/nmanumr/fung-notes">Source
+        Code</a></p>
+
+    <p>
+      Built using mkdocs, material theme for mkdocs & few javascript & python scripts. Every document
+      is written in markdown except mcqs that are written in custom developed MCQs syntax that is parsed
+      by a python script and translated back to markdown. All these markdown are then compiled to develop
+      whole web using mkdocs.
+    </p>
+
+    <p class="pre-header h3-pre">2018</p>
+    <h3>Easybasic Interpreter</h3>
+    <p class="post-header accent h3-post">A modren BASIC inbrowser interpreter (InComplete) - <a
+        href="https://easy-basic.github.io/">View</a> - <a href="https://github.com/easy-basic/interpreter">Source
+        Code</a></p>
+
+    <p>
+      Built using Javascript, Typescript, Monaco Editor and Angular. Can Parse any BASIC program and
+      also execute few of the statements like let, for, print etc. Also the whole interpreter is extensible
+      any new statement, operator or built-in function an can be parsed and executed by jusy hooking a new
+      extension.
+    </p>
+
+    <p class="pre-header h3-pre">2017</p>
+    <h3>Maze Reinforcement</h3>
+    <p class="post-header accent h3-post">A agent that tries solves maze using reinforment learing - <a
+        href="https://nmanumr.github.io/maze-reinforcement/">View</a> - <a
+        href="https://github.com/nmanumr/maze-reinforcement">Source Code</a></p>
+
+    <p>
+      Built using Javascript, reinformentJS. A agent in the maze of nxn tries to reach out from maze.
+      In every iteration it tries to optimise number of actions required to reach out by using reinforcement
+      learning. Mazes are completly random generated using Randomized Prim's algorithm.
+    </p>
+
+    <p class="pre-header h3-pre">2017</p>
+    <h3>Slide Puzzle</h3>
+    <p class="post-header accent h3-post">A bot that solves Slide Puzzle of any complexity - <a
+        href="https://nmanumr.github.io/slidepuzzle/">View</a> - <a href="https://github.com/nmanumr/slidepuzzle">Source
+        Code</a></p>
+
+    <p>
+      Built using Javascript. A bot that can automatically solve slide puzzle of any complexity.
+      The whole algorithm was hard coded and it tries to reduce the puzzle dimensions by solving
+      outer layers first.
+    </p>
+
+    <p class="pre-header h3-pre">2016</p>
+    <h3>Easybasic IDE</h3>
+    <p class="post-header accent h3-post">A desktop IDE for GWBASIC - <a
+        href="https://github.com/nmanumr/easybasic/tree/release-4.0">View</a></p>
+
+    <p>
+      Built using Javascript, Monaco Editor and ElectronJS. Supports GW-BASIC syntax highlighting,
+      intellisence, program execution, builtin documentation, code examples & file comparing. GW-BASIC
+      code was executed using another opensource GW-BASIC interpreter PC-BASIC.
+    </p>
+
+    <p class="pre-header h3-pre">2016</p>
+    <h3>GWBASIC.NET</h3>
+    <p class="post-header accent h3-post">A desktop IDE for GWBASIC - <a
+        href="https://github.com/nmanumr/gwbasic.net">View</a></p>
+
+    <p>
+      Built using C#, winform. This was just first attempt of Easybasic using Dot Net Framwork.
+      It also have example code and syntax highlighting but syntax highlighting just breaks alot
+      of times. It also uses PCBASIC for Program Execution.
+    </p>
+  </section>
+
+  <section id="education">
+    <h1 class="lead">Education</h1>
+
+    <p class="pre-header h3-pre">2018 - 2022 (Expected)</p>
+    <h3>Bachelor of Science in Computer Science</h3>
+
+    <p class="pre-header h3-pre">2016 - 2018</p>
+    <h3>Intermediate in Computer Science</h3>
+
+    <p class="pre-header h3-pre">2014 - 2016</p>
+    <h3>Matriculation with Computer Science</h3>
+  </section>
+  <p></p>
+
+  <section id="hobbies">
+    <h1 class="lead">HOBIES</h1>
+
+    <h3>What I do when I’m not coding</h3>
+    <p class="post-header accent h3-post">Random things I’m interested in that you can ask me about</p>
+
+    <p>
+      Drum beating, music, home automation, OS customization, disassembling and repairing electronic devices, biking,
+      scripting &
+      scraping web pages, solving math problems, youtubing, rebuilding old content specially related to websites and
+      writing
+      and redesigning open source project documentations.
+    </p>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <script>
+    function data() {
+      return {
+        languages: [
+          ['Javascript', 'Primary Langauge'],
+          ['Typescript', 'For maintainable codebase'],
+          ['HTML/CSS', 'NASA Hacker  ¯\\_(ツ)_/¯'],
+          ['Python', 'For basic Scripting'],
+          ['Ionic/Cordova', 'For Mobile Apps'],
+          ['Flutter', 'For Mobile Apps'],
+          ['ElectronJS', 'For Desktop Apps'],
+          ['Django', 'Default Backend'],
+          ['NodeJS', 'Just for Necessity'],
+        ],
+        tools: [
+          ['Git', 'Default VCS'],
+          ['zsh', 'Default Shell'],
+          ['Postman', 'API Inspector'],
+          ['Docker', 'Copy Cat'],
+          ['VS Code', 'Default Text Editor'],
+          ['PyCharm', 'Default Python IDE'],
+          ['WebStrom', 'Default Js IDE'],
+          ['MacOS', 'Primary OS'],
+          ['Linux', 'Secondary Choice'],
+        ]
+      };
+    }
+  </script>
+</body>
+
+</html>

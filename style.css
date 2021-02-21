@@ -1,0 +1,131 @@
+body {
+  font-family: "Slabo 27px", serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin: 50px auto;
+  width: 850px;
+}
+
+h1,
+h2 {
+  position: relative;
+  left: -17px;
+  margin: 0px;
+  font-weight: 100;
+}
+
+h1::before,
+h2::before {
+  content: "./";
+  position: relative;
+  left: -16px;
+}
+
+h3 {
+  font-size: 16px;
+  margin-bottom: 3px;
+  font-weight: 100;
+}
+
+p {
+  margin: 40px 0px;
+  color: #777;
+  line-height: 22px;
+}
+
+a {
+  color: #0d6161;
+}
+
+.pre-header {
+  margin: 0px;
+  font-weight: 600;
+  color: #777;
+  margin-top: 40px;
+  line-height: 1;
+}
+
+.h1-pre {
+  font-size: 13px;
+}
+
+.h3-pre{
+    opacity: 0.7;
+}
+
+.pre-header~h3{
+    margin-top: 2px;
+}
+
+.post-header {
+  margin: 0px;
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
+.h1-post {
+  font-size: 22px;
+}
+
+.accent {
+  color: #0d6161;
+}
+
+
+.lead {
+  font-weight: 100;
+}
+
+.h3-post {
+  font-size: 15px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.gray {
+  color: #777;
+}
+
+.gray-dark {
+  color: #333;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.ml-3 {
+  margin-left: 6px;
+}
+
+.mr-3 {
+  margin-right: 6px;
+}
+
+.padding-dots {
+  border-bottom: 2px dotted #777;
+}
+
+@media print {
+  body {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .pagebreak {
+    clear: both;
+    page-break-after: always;
+  }
+}
